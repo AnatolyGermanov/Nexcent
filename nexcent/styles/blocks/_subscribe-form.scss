@@ -1,0 +1,24 @@
+.subscribe-form {
+    position: relative;
+
+    &__title {
+        color: var(--color-light);
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__button {
+        @include reset-button;
+        @include square(var(--input-height));
+        @include flex-center(true);
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: var(--color-light);
+        border-top-right-radius: var(--border-radius-large);
+        border-bottom-right-radius: var(--border-radius-large);
+    }
+}

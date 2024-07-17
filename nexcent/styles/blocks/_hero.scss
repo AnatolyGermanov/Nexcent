@@ -1,0 +1,26 @@
+.hero {
+    position: relative;
+    padding-block: 100px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 100px;
+    }
+
+    &__title:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &__description:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__pagination {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        translate: -50%;
+    }
+}

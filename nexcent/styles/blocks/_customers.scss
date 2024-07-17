@@ -1,0 +1,51 @@
+.customers {
+    padding-block: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 78px;
+
+    &__info {
+        font-weight: 500;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__company {
+        color: var(--color-light-gray);
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__extra {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 32px;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 41px;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 8px;
+        font-weight: 700;
+    }
+}

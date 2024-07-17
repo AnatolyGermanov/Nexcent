@@ -1,0 +1,9 @@
+.clients {
+    padding-block: 25px;
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

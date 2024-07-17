@@ -1,0 +1,33 @@
+.button {
+    @include reset-button;
+    @include flex-center(true);
+    
+    column-gap: 8px;
+    flex-shrink: 0;
+    height: var(--button-height);
+    padding-inline: 32px;
+    font-weight: 500;
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius-small);
+
+    @include hover {
+        background-color: var(--color-accent-active);
+    }
+
+    &--transparent {
+        background-color: transparent;
+        color: var(--color-accent);
+
+        @include hover {
+            background-color: var(--color-accent-alt);
+        }
+    }
+
+    &--small {
+        height: var(--button-height-small);
+        padding-inline: 20px;
+        font-size: 14px;
+        border-radius: var(--border-radius);
+    }
+}

@@ -1,0 +1,17 @@
+.achievements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 72px;
+    padding-block: 64px;
+
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__description {
+        color: var(--color-dark);
+    }
+}

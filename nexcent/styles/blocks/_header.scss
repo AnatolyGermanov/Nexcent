@@ -1,0 +1,48 @@
+.header {
+    padding-block: 20px;
+    background-color: var(--color-silver);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 50px;
+        padding-inline: 100px;
+    }
+
+    &__menu {
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: 50px;
+
+            @include desktop {
+                column-gap: 20px;
+            }
+        }
+
+        &-link {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            height: var(--button-height-small);
+            color: var(--color-dark);
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-color: transparent;
+
+            @include hover {
+                text-decoration-color: currentColor;
+            }
+
+            &.is-active {
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        column-gap: 15px;
+    }
+}

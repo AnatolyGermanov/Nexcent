@@ -1,0 +1,25 @@
+.pixelgrade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    padding-block: 52px;
+
+    &__header {
+        max-width: 601px;
+    }
+
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+}

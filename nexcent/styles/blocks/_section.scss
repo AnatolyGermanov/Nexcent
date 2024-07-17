@@ -1,0 +1,27 @@
+.section {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__description {
+        max-width: 628px;
+        text-align: center;
+    }
+}

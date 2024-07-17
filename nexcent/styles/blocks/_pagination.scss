@@ -1,0 +1,20 @@
+.pagination {
+    
+    &__list {
+        display: flex;
+        column-gap: 8px;
+    }
+
+    &__button {
+        @include reset-button;
+        @include square(10px);
+
+        background-color: var(--color-accent);
+        border-radius: 50%;
+        opacity: 0.3;
+
+        &.is-current {
+            opacity: 1;
+        }
+    }
+}

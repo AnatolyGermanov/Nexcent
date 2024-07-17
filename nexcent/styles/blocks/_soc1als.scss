@@ -1,0 +1,15 @@
+.soc1als {
+
+    &__list {
+        display: flex;
+        column-gap: 16px;
+    }
+
+    &__link {
+        @include flex-center(true);
+        @include square(32px);
+
+        background-color: var(--color-light-10);
+        border-radius: 50%;
+    }
+}
